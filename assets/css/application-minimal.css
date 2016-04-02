@@ -15,10 +15,9 @@
   background-color: #fff;
 }
 h1,h3 {
-    color:#000;
-    font-family: "Open Sans";
-    font-weight:300;
-    font-size: 2.5em;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.5em;
 }
 h2 {
     color:#000;
@@ -36,7 +35,7 @@ p{
 
 li{
     font-size: 16px;
-    text-align:left; 
+    text-align:left;
 }
 
 span.greenline {
@@ -50,7 +49,7 @@ span.heavy{
 }
 
 .block-2-content{
-   background-color: #f2f2f2; 
+   background-color: #f2f2f2;
 }
 .greenbg.lead {
     background-color:#eef9ef;
@@ -70,8 +69,8 @@ div.form-block{
 }
 
 input[type="text"], textarea {
-    background-color: #eef9ef; 
-    
+    background-color: #eef9ef;
+
 }
 
 a,
@@ -85,12 +84,12 @@ a:hover {
     font-weight: 400;
 }
 a:hover {
-   color: #22b573; 
+   color: #22b573;
 }
 
 button.btn {
     border-radius: 0;
-    
+
 }
 .icon{
     color:#22b573;
@@ -173,7 +172,7 @@ button.btn {
 
 .block-3-content{
     background-color:#fff;
-    
+
 }
 
 
@@ -188,7 +187,7 @@ button.btn {
 }
 
 .block-footer {
-    background-color: #fff; 
+    background-color: #fff;
 }
 
 
