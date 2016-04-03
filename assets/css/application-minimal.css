@@ -14,7 +14,13 @@
 .block-intro {
   background-color: #fff;
 }
-h1,h3 {
+h1{
+   font-size: 32px;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+h3 {
     font-size: 22px;
     font-weight: 300;
     line-height: 1.5em;
@@ -38,11 +44,9 @@ li{
     text-align:left;
 }
 
-span.greenline {
-    text-decoration: none;
-    border-bottom: 2px solid #6fcea3;
-    padding-bottom: 2px;
-    display: inline-block;
+span.embolden {
+    font-weight: 600;
+    color:#f16432;
 }
 span.heavy{
     font-weight:800;
