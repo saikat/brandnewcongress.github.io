@@ -137,10 +137,15 @@ button.btn {
     }
 }
 
-/* block 3 */
-.block-3-content {
-    background-color: #fff;
+/*Font Awesome Icons*/
+a.icon{
+    border:none;
+    font-size: 3em;
 }
+
+
+
+hr{width:50%}
 
 /*email obfuscation*/
 /*the below css obfuscates the link text--the mailto is obfuscated by a jquery function in the html page*/
