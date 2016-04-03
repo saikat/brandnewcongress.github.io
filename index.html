@@ -98,7 +98,7 @@
 
             <h1 class="embolden">Brand New Congress</h1>
 
-             <div class="container"><p class="text-center">Questions, comments? Email: <a href="info@brandnewcongress.org"><span class="e-mail" data-user="ofni" data-website="gro.ssergnocwendnarb"></span></a></p></div>
+             <div class="container"><p class="text-center">Questions, comments? Email: <a class="obf-email" href="#"><span class="e-mail" data-user="ofni" data-website="gro.ssergnocwendnarb"></span></a></p></div>
 
           <div class="container"><p class="small text-center">Copyright &copy;2016 Brand New Congress.<br />All rights reserved.</p></div>
 
@@ -118,14 +118,23 @@
       <!--    Form input script  -->
       <script>
     $('#input-form').one('submit',function(){
-            var inputq1 = encodeURIComponent($('#input-q1').val());
+            
+        var inputq1 = encodeURIComponent($('#input-q1').val());
         var inputq2 = encodeURIComponent($('#input-q2').val());
+        var inputq3 = encodeURIComponent($('#input-q3').val());
+        var inputq4 = encodeURIComponent($('#input-q4').val());
         var q1ID = "entry.947285428";
         var q2ID = "entry.2046310782";
+        var q3ID = "entry.1955891857";
+        var q4ID = "entry.1170337950";
 
         var baseURL = 'https://docs.google.com/forms/d/19qVebMA7zvX9MpaXBfJ0Vk8y4E-UBg5od90AwqvLGLE/formResponse?';
         var submitRef = '&submit=Submit';
-        var submitURL = (baseURL + q1ID + "=" + inputq1 + "&" + q2ID + "=" + inputq2 + submitRef);
+        var submitURL = (baseURL + 
+                         q1ID + "=" + inputq1 + "&" + 
+                         q2ID + "=" + inputq2 + "&" + 
+                         q3ID + "=" + inputq3 + "&" + 
+                         q4ID + "=" + inputq4 + submitRef);
         console.log(submitURL);
         $(this)[0].action=submitURL;
         $('#input-feedback').text('We are very excited to be continuing the revolution with you!');
@@ -134,6 +143,19 @@
     });
 </script>
 <!--    End form input script  -->
+<!--      Email obf-->
+      <script>
+      $(document).ready(function() {
+        var x = "info";
+        var y = "brandnewcongress";
+        var z = ".org";
+        var r = '' + x + '@' + y + z;
+        $('.obf-email').attr('href', 'mailto:' +r);
+    });
+      </script>
+      
+      
+<!--      Website js-->
     <script src="assets/js/toolkit.js"></script>
   </body>
 </html>
