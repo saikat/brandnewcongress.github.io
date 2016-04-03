@@ -44,7 +44,7 @@ li{
     text-align:left;
 }
 
-span.embolden {
+.embolden {
     font-weight: 600;
     color:#f16432;
 }
