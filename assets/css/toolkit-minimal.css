@@ -299,10 +299,8 @@ img {
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
   display: block;
-  max-width: 200px;
-  min-width: 200px;
-  max-height: 200px;
-  min-height: 200px;
+  max-width: 100%;
+  height: auto;
 }
 .img-rounded {
   border-radius: 6px;
@@ -316,10 +314,8 @@ img {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   display: inline-block;
-  max-width: 200px;
-  min-width: 200px;
-  max-height: 200px;
-  min-height: 200px;
+  max-width: 100%;
+  height: auto;
 }
 .img-circle {
   border-radius: 50%;
@@ -450,7 +446,7 @@ h1,
 h2,
 .h2 {
   font-size: 36px;
-  color:#EF5B30;
+  color:#EF5B30;    
 }
 h3,
 .h3 {
@@ -4374,8 +4370,7 @@ a.thumbnail.active {
   display: block;
 }
 .media-object.img-thumbnail {
-  max-width: 200px;
-  min-width: 200px;
+  max-width: none;
 }
 .media-right,
 .media > .pull-right {
@@ -8944,16 +8939,3 @@ h6,
 }
 
 /*# sourceMappingURL=toolkit-minimal.css.map */
-
-
-/* #endorser {position:relative; width:230px; height:230px; /*dimensions of image*/} */
-#endorser .image,
-#endorser .text {transition: opacity 0.2s ease-in-out;}
-#endorser .text {position:absolute; top:10px; left:20px; opacity:0;}
-
-#endorser:hover .image {opacity:0;}
-#endorser:hover .text {opacity:1;}
-
-.noresize {
-  resize: none;
-}
