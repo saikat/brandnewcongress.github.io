@@ -59,6 +59,11 @@ div.form-block {
 }
 
 /*HEADER IMG*/
+.secondary-img img {
+    max-width: 100%;
+    max-height: 150px;
+}
+
 .feature-img img {
     max-width: 100%;
     max-height: 316px;
