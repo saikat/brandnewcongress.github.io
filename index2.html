@@ -76,7 +76,7 @@
 
                     <h4>We're building on the tools, tactics and networks that we developed together on Bernie's campaign. But to pull this off, the volunteer movement will have to wield more power
                     and resources than on any campaign before. This means volunteers on the ground will run their own offices and voter contact operations, and will have access to all necessary tools
-                    and materials from the start. Get ready for the <span class="heavy">most beautiful campaign</span> ever.</h4>
+                    and materials from the start. Get ready for <a href="/timeline.html"><span class="heavy">the most beautiful campaign</span></a> ever.</h4>
                 </div>
             </div>
         </div>
@@ -377,7 +377,8 @@
                          q4ID + "=" + inputq4 + submitRef);
                          console.log(submitURL);
         $(this)[0].action=submitURL;
-        $('#input-feedback').text('We are very excited to be continuing the revolution with you!');
+        /* $('#input-feedback').text('We are very excited to be continuing the revolution with you!'); */
+        window.location.replace("https://secure.actblue.com/contribute/page/brandnewcongress");
         $('#submit-btn').hide();
 
     });
