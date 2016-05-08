@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="Let's elect a Brand New Congress that works for all." name="description">
+    <meta content="brand, new, congress, bernie, sanders, political, revolution, elect, progressive, 2016, democrat" name="keywords">
+    <meta content="Brand New Congress" name="author">
+    <!--     Meta tags for Facebook   -->
+    <meta content="http://brandnewcongress.org" property="og:url">
+    <meta content="website" property="og:type">
+    <meta content="Brand New Congress" property="og:title">
+    <meta content="Let's elect a Brand New Congress that works for all." property="og:description">
+    <meta content="http://brandnewcongress.github.io/assets/img/bnc-fb-share-img.png" property="og:image">
+
+    <!-- font-awesome-icon-font-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <title>Brand New Congress</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,300,600,400italic' rel='stylesheet' type='text/css'>
+    <link href="assets/css/toolkit-minimal.css" rel="stylesheet">
+    <link href="assets/css/application-minimal.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+</head>
+
+<body>
+
+
+    <!-- Block 2 -->
+
+    <!-- Include jQuery (required) and the JS -->
+
+
+    <div class="block block-2-content p-t-md p-x">
+        <div class="container">
+            <div class="row p-y-0">
+                <div class="form-block col-md-8 p-b-0 p-t-0 p-x">
+
+
+                  <h2>Here's how to join a Brand New Congress orientation call:</h2>
+
+                  <p><b>Click below to get your unique call-in number and pin</b> to join any of the following calls:</p>
+
+
+                <blockquote>
+                  <div id="upcomingConferences">
+                    <p><b>Loading calls...</b></p>
+                  </div>
+                </blockquote>
+
+
+<!-- END -->
+
+                <p>Please look over the timeline and basic strategy below before the call!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="assets/js/webservice.js" /></script>
+        <script>
+          $(document).ready(function() {
+            generateCallHtml("Learn about ", 15, function(upcomingConferencesJson) {
+              $("#upcomingConferences").text("");
+              $("#upcomingConferences").append(upcomingConferencesJson);
+            });
+          });
+        </script>
+
+
+    <!--  Website js-->
+
+    <script src="assets/js/toolkit.js"></script>
+
+  </body>
+</html>
