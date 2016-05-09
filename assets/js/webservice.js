@@ -11,7 +11,8 @@ function generateCallHtml(nameContains, maxSignups, callback) {
               if (item.currentSignups > 0) {
                 var $conferenceLink = $("<a></a>").attr("href", item.registrationLink);
                 // refactor
-                var linkText = "<b>" + item.date + "</b>" + " &mdash; " + item.time + " (<b>" + freeSlots + "</b> free slots)";
+                var linkText = "<b>" + item.date + "</b>" + " &mdash; " + item.time;
+                // removed this. add back if we want to display free slots: + " (<b>" + freeSlots + "</b> free slots)";
                 $conferenceLink.html(linkText);
                 var $listItem = $("<li></li>");
                 $listItem.append($conferenceLink);
