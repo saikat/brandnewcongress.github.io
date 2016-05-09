@@ -5,6 +5,11 @@ function generateCallHtml(nameContains, maxSignups, callback) {
       crossDomain: true,
       data: {"nameContains": nameContains},
       success: function(response) {
+          if (typeof response.conferences === "undefined" || response.conferences.length < 1) {
+            callback("Sorry, all calls are full. Check back later.");
+            return;
+          }
+
           var $ul = $("<ul></ul>");
           $(response.conferences).each(function(index, item) {
               var freeSlots = maxSignups - item.currentSignups;
@@ -24,7 +29,7 @@ function generateCallHtml(nameContains, maxSignups, callback) {
       },
       error: function(xhr, error, exception) {
           console.log(xhr);
-          callback("No conferences found. Please contact info@brandnewcongress.org if you were directed to this page.");
+          callback("Error occurred. Please contact info@brandnewcongress.org if you were directed to this page.");
       }
   });
 }
