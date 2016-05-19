@@ -13,7 +13,7 @@ function generateCallHtml(nameContains, maxSignups, callback) {
           var $ul = $("<ul></ul>");
           $(response.conferences).each(function(index, item) {
               var freeSlots = maxSignups - item.currentSignups;
-              if (item.currentSignups > 0) {
+              if (freeSlots > 0) {
                 var $conferenceLink = $("<a></a>").attr("href", item.registrationLink);
                 // refactor
                 var linkText = "<b>" + item.date + "</b>" + " &mdash; " + item.time;
