@@ -64,6 +64,36 @@ div.form-block {
     max-height: 150px;
 }
 
+.find-city-button {
+   margin-top: 1em;
+   margin-bottom: 1em;
+   background-color: rgb(20, 127, 215);
+   color: white;
+   padding: 0.2em 1em;
+   display: inline-block;
+   font-weight: 600;
+   font-size: 3vw;
+   cursor: pointer;
+   border-radius: 5px;
+}
+
+.find-city-button a.find-city-link {
+    color: white;
+    text-decoration: none;
+    border: none;
+    font-weight: 600;
+}
+
+.find-city-button:hover {
+    background-image: linear-gradient(transparent,rgba(0,0,0,.05) 40%,rgba(0,0,0,.1))
+}
+
+.hero-img img {
+    max-width: 100%;
+    max-height: 80vh;
+    opacity: 0.3;
+}
+
 .feature-img img {
     max-width: 100%;
     max-height: 316px;
